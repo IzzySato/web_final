@@ -11,10 +11,10 @@ const temp01 = ({id, name, sex, country, hobby}) => `
 //JSON data
 const getJSONdata01 = () => {
   $.ajax({
-    url: '/people/get',
+    url: '/people',
     dataType: 'json',
     type: 'GET',
-    data: {format: 'name'},
+    data: {format: 'json'},
     success: (data) => {
       const html = data.map(n => temp01(n)).join('');
       $('#container01').html(html);
@@ -36,10 +36,10 @@ const getJSONdata01 = () => {
 //HTML data
 const getHTMLdata = () => {
   $.ajax({
-    url: '/people/get',
+    url: '/people',
     dataType: 'html',
     type: 'GET',
-    data: {format: 'age'},
+    data: {format: 'html'},
     success: (data) => {
       $('#container02').html(data);
     },
@@ -60,9 +60,10 @@ const postName = () => {
   const hobby = $('#hobby').val();
 
   $.ajax({
-    url: '/people/post',
+    url: '/people',
     dataType: 'html',
     type: 'POST',
+    data: { name, age, sex, country, hobby },
     success: (data) => {
       $('#outputContainer').html(temp01({name, age, sex, country, hobby}));
     },
