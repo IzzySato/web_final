@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final</title>
+  <script src="https://kit.fontawesome.com/d847cbed4d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- navigation here -->
+    </nav>
+  </header>
+  <section>
+    <!-- POST area -->
+    <div>
+      <h2>Add A Person Here</h2>
+      <div class="inputContainer">
+        <label for="name">name</label>
+        <input id="name" type="text" />
+      </div>
+      <div class="inputContainer">
+        <label for="age">age</label>
+        <input id="age" type="text" />
+      </div>
+      <div class="inputContainer">
+        <label for="sex">sex</label>
+        <input id="sex" type="text" />
+      </div>
+      <div class="inputContainer">
+        <label for="country">country</label>
+        <input id="country" type="text" />
+      </div>
+      <div class="inputContainer">
+        <label for="hobby">hobby</label>
+        <input id="hobby" type="text" />
+      </div>
+      <button id="submitButton">Submit</button>
+      <div id="outputContainer"></div>
+    </div>
+
+    <!-- main section GET -->
+    <h2>People Data</h2>
+    <div>
+      <label for="filter">Filter Name</label>
+      <input id="filterName" type="text" />
+      <button id="filterNameBtn">Submit</button>
+    </div>
+    <h3>Data from JSON</h3>
+    <div id="container01"></div>
+    <h3>HTML data</h3>
+    <div id="container02"></div>
+
+  </section>
+  <footer>
+    <!-- footer here -->
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
